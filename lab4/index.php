@@ -10,6 +10,7 @@ switch ($mod) {
         $page = 'tambah';
         break;
     case "rumah":
+    case "":
         $page = 'rumah';
         break;
     case "ubah":
@@ -23,9 +24,6 @@ switch ($mod) {
         break;
     case "kontak":
         $page = "kontak";
-        break;
-    case "":
-        $page = "rumah";
         break;
     default:
         $page = 'error';

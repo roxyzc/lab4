@@ -5,6 +5,7 @@
 **<p>NIM: 312110169</p>**
 
 ## .htaccess
+
 ```
 <IfModule mod_rewrite.c>
     RewriteEngine On
@@ -18,6 +19,7 @@
 # _Praktikum 4_
 
 ## index.php
+
 ```
 <?php
 
@@ -46,6 +48,7 @@ switch ($mod) {
 ![gambar](./lab4_php_modular/sample/home.png)
 
 ### Code
+
 ```
 <?php require('header.php'); ?>
 <div class="content">
@@ -62,6 +65,7 @@ switch ($mod) {
 ![gambar](./lab4_php_modular/sample/about.png)
 
 ### Code
+
 ```
 <?php require('header.php'); ?>
 <div class="content">
@@ -78,6 +82,7 @@ switch ($mod) {
 ![gambar](./lab4_php_modular/sample/contact.png)
 
 ### code
+
 ```
 <?php require('header.php'); ?>
 <div class="content">
@@ -90,6 +95,7 @@ switch ($mod) {
 # _Tugas konsep modularisasi pada kode program lab3web_
 
 ## index.php
+
 ```
 <?php
 
@@ -103,6 +109,7 @@ switch ($mod) {
         $page = 'tambah';
         break;
     case "rumah":
+    case "":
         $page = 'rumah';
         break;
     case "ubah":
@@ -116,9 +123,6 @@ switch ($mod) {
         break;
     case "kontak":
         $page = "kontak";
-        break;
-    case "":
-        $page = "rumah";
         break;
     default:
         $page = 'error';
@@ -138,6 +142,7 @@ require_once("./include/footer.php");
 ![gambar1](./lab4/sample/home.png)
 
 ### Code
+
 ```
 <?php
 $sql = 'SELECT * FROM data_barang';
@@ -185,6 +190,7 @@ $result = mysqli_query($conn, $sql);
 ![gambar](./lab4/sample/about.png)
 
 ### Code
+
 ```
 <div class="main">
     <div class="about">
@@ -200,6 +206,7 @@ $result = mysqli_query($conn, $sql);
 ![gambar](./lab4/sample/contact.png)
 
 ### Code
+
 ```
 <div class="main">
     <h1>Contact Me</h1>

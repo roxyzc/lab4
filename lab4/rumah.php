@@ -1,5 +1,4 @@
 <?php
-// query untuk menampilkan data
 $sql = 'SELECT * FROM data_barang';
 $result = mysqli_query($conn, $sql);
 ?>
