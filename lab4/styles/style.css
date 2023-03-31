@@ -1,0 +1,164 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container nav{
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: start;
+    background-color: #191B28;
+}
+
+.container nav a{
+    display: inline-block;
+    color: white;
+    padding: 15px;
+}
+
+.container nav a:hover{
+    transition: .2s all;
+    background-color: #2c2f42;
+}
+
+.container footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    background-color: #191B28;
+    color: white;
+    padding: 15px;
+}
+
+.container .main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .main table{
+    box-shadow: -2px 4px 4px rgba(128, 128, 128, 0.461);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.container .main table img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.container .main table th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container .main table tr td a {
+    text-decoration: underline;
+}
+
+.container .main table tr td a:hover, .tambah:hover{
+    color: rgba(255, 0, 0, 0.6);
+    transition: .2s all;
+}
+
+/* tambah barang */
+
+.container .main form{
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+.container .main form .input label{
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container .main form .input input[type="text"], .container .main form .input select{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+.container .main form .input .label{
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: azure;
+    box-shadow: -2px -2px 3px inset gray, 2px 2px 3px inset whitesmoke;
+}
+
+.container .main form .submit input[type="submit"]{
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 0;
+    box-shadow: -2px -2px 3px inset gray, 2px 2px 3px inset whitesmoke;
+    border: 1px solid black;
+} 
+
+.container .main form .submit input[type="submit"]:hover{
+    box-shadow: 0px 0px 0px inset gray, 0px 0px 0px inset gray;
+    transform: translate(0px, 3px);
+    background-color: rgb(234, 234, 234, .2);
+    cursor: pointer;
+    transition: .4ms all;
+
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.container .contact{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .contact a{
+    color: #2c2f42;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 1px black;
+    border-radius: 20%;
+}
